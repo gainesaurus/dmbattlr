@@ -1,5 +1,29 @@
+:root {
+  --purpleBlack: #413344;
+  --purpleGrey: #614c65;
+  --purpleLtGrey: #806485;
+  --ltPurple: #936397;
+  --purple: #a662a8;
+  --drkPurple: #664972;
+  --blueBlack: #463c57;
+  --blueGrey: #6e8da9;
+  --ltBlue: #91bcdd;
+  --stoneBlue: #567d99;
+  --cobalt: #395e77;
+  --greenShade: #305662;
+  --forestGreen: #264d4d;
+  --green: #315c45;
+  --olive: #8a9a65;
+  --acidGreen: #b6b975;
+  --burnOrange: #c64e50;
+  --red: #bc203e;
+  --crimson: #901730;
+  --maroon: #640e22;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
