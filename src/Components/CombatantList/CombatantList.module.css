@@ -1,0 +1,79 @@
+.listContainer {
+  display: flex;
+}
+
+.expandContainer {
+  display: flex;
+  height: 70%;
+  width: 350px;
+  background-color: lightgrey;
+  border: 1px solid #757575;
+  border-radius: 6px;
+  margin: 0.5em;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+.expandImg {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+  border: 2px solid var(--ltPurple);
+  border-radius: 6px;
+}
+
+.charName {
+  margin: 0 0 0.2em 0;
+}
+
+.charBg {
+  margin: 0 0 0.2em 0;
+  color: #757575;
+}
+
+.charClass {
+  margin: 0 0 0.2em 0;
+  color: #757575;
+}
+
+.charInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 1em 1em 0;
+  text-align: center;
+}
+
+.combatantContainer {
+  display: flex;
+  height: 70%;
+  width: 75px;
+  justify-content: center;
+  background-color: lightgrey;
+  border: 1px solid #757575;
+  border-radius: 6px;
+  margin: 0.5em;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+.smallImg {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  margin: 1em 5px 1em 5px;
+  box-shadow: 1px 0px 5px rgba(0,0,0,0.5);
+  border: 2px solid var(--ltPurple);
+  border-radius: 6px;
+}
+
+.addCombatant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgrey;
+  height: 70%;
+  width: 75px;
+  border: 1px solid #757575;
+  border-radius: 6px;
+  margin: 0.5em;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}

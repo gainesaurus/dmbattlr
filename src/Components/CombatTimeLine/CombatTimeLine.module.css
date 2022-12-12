@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  height: 70%;
+  width: 20%;
+  border: 1px solid #757575;
+  border-radius: 6px;
+  margin: 0.5em 1em 0.5em 1em;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+.entry {
+  display: flex;
+  background-color: #91bcdd;
+  border-radius: 6px;
+  padding: 0.5em;
+  margin: 1em;
+}
