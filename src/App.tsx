@@ -1,20 +1,19 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
-import CombatTimeLine from './Components/CombatTimeLine/CombatTimeLine';
+import CombatPage from './Components/CombatPage/CombatPage';
 import styles from './App.module.css';
-import CombatantList from './Components/CombatantList/CombatantList';
 
 function App() {
   return (
-    <div className={styles.App}>
-      <NavBar />
-      <div className={styles.page}>
-        <div className={styles.center}>
-          <CombatantList />
-        </div>
-        <CombatTimeLine />
+    <BrowserRouter>
+      <div className={styles.App}>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<CombatPage />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

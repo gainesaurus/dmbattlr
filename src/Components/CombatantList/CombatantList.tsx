@@ -49,9 +49,9 @@ const CombatantList = () => {
   return (
     <div className={styles.listContainer}>
       {mockPcs.map(mock => <CombatantItem char={mock}/>)}
-      <div className={styles.addCombatant}>
+      <button className={styles.addCombatant}>
         <PersonAdd />
-      </div>
+      </button>
     </div>
   )
 }

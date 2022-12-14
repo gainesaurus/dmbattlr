@@ -1,7 +1,7 @@
 .combatantContainer {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 90%;
   width: 75px;
   justify-content: flex-start;
   text-align: center;
@@ -34,10 +34,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 75%;
+  height: 100%;
   width: 350px;
   background-color: lightgrey;
-  border: 2px solid #c64e50;
+  border: 1px solid #757575;
   border-radius: 6px;
   margin: 0.5em;
   box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
