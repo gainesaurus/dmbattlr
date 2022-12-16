@@ -10,22 +10,22 @@ const NavBar = () => {
   return (
     <div className={styles.navContainer}>
       <div className={styles.icons}>
-        <Link to='/profile' className={styles.navIcon}>
+        <Link to='/profile' className={styles.navIcon} title='profile'>
           <AccountCircle />
         </Link>
-        <Link to='/home' className={styles.navIcon}>
+        <Link to='/home' className={styles.navIcon} title='home'>
           <Castle />
         </Link>
-        <Link to='/pcs' className={styles.navIcon}>
+        <Link to='/pcs' className={styles.navIcon} title='PC List'>
           <Groups3 />
         </Link>
-        <Link to='/abilities' className={styles.navIcon}>
+        <Link to='/abilities' className={styles.navIcon} title='abilities'>
           <SportsMartialArts />
         </Link>
-        <Link to='/spells' className={styles.navIcon}>
+        <Link to='/spells' className={styles.navIcon} title='spells'>
           <AutoFixHigh />
         </Link>
-        <Link to='/monsters' className={styles.navIcon}>
+        <Link to='/monsters' className={styles.navIcon} title='monsters'>
           <Pets />
         </Link>
       </div>

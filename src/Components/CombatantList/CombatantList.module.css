@@ -2,6 +2,8 @@
   display: flex;
   margin: 0 0 0 0.5em;
   height: 70%;
+  width: 65vw;
+  overflow-x: scroll;
 }
 
 .addCombatant {

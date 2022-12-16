@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: lightgrey;
   height: 75%;
-  width: 20%;
+  width: 20vw;
   border: 1px solid #757575;
   border-radius: 6px;
   margin: 0.5em 1em 0.5em 1em;
@@ -19,4 +19,5 @@
   margin: 1em;
   text-shadow: 1px 1px 3px white;
   box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.5);
+  hyphens: auto;
 }

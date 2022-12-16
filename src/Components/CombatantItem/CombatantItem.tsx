@@ -33,6 +33,14 @@ const CombatantItem = ({char}:any) => {
             <h5 className={styles.alignment}>{char.alignment}</h5>
           </div>
         </div>
+        <div className={styles.achp}>
+          <h2 className={styles.ac}>18</h2>
+          <div className={styles.hp}>
+            <h3>43</h3>
+            <h3> / </h3>
+            <h3>67</h3>
+          </div>
+        </div>
       </div>
     )
   }

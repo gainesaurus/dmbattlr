@@ -4,7 +4,6 @@
   height: 90%;
   width: 75px;
   justify-content: flex-start;
-  text-align: center;
   background-color: lightgrey;
   border: 1px solid #757575;
   border-radius: 6px;
@@ -32,7 +31,8 @@
 
 .expandContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: flex-start;
   height: 100%;
   width: 350px;
@@ -55,8 +55,11 @@
 
 .charCard {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #395e77;
+  box-shadow: 1px 1px 5px #395e77;
 }
 
 .charName {
@@ -84,4 +87,25 @@
   margin: 1em 1em 1em 0;
   height: fit-content;
   text-align: center;
+}
+
+.achp {
+  display: flex;
+  margin: 0 1em 0 1em;
+}
+
+.ac {
+  display: flex;
+  padding: 10px;
+  color: white;
+  background-color: #567d99;
+  border: 1px solid black;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.hp {
+  display: flex;
+  margin: 1em;
 }
