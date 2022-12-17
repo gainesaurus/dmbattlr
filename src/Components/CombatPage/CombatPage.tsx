@@ -9,10 +9,12 @@ const CombatPage = () => {
 
   return (
       <div className={styles.page}>
-        <div className={styles.center}>
+        <div className={styles.combatants}>
           <CombatantList />
         </div>
-        <CombatTimeLine />
+        <div className={styles.timeline} >
+          <CombatTimeLine />
+        </div>
       </div>
   )
 }

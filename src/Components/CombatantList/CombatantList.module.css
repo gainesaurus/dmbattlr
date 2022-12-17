@@ -2,7 +2,8 @@
   display: flex;
   margin: 0 0 0 0.5em;
   height: 70%;
-  width: 65vw;
+  width: 100%;
+  max-width: 70vw;
   overflow-x: scroll;
 }
 
@@ -16,8 +17,8 @@
   width: 50px;
   border: 1px solid #757575;
   border-radius: 6px;
-  margin: 0.5em 0 0 0.5em;
-  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+  margin: 0.5em 1em 0 0.5em;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   cursor:pointer
 }
 

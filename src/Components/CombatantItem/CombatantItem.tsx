@@ -12,7 +12,7 @@ const CombatantItem = ({char}:any) => {
         <img 
           className={styles.smallImg}
           alt='character' 
-          src={char.img}
+          src={char.picUrl}
         />
         <p className={styles.name}>{char.name}</p>
       </div>
@@ -24,7 +24,7 @@ const CombatantItem = ({char}:any) => {
           <img 
             className={styles.expandImg}
             alt='character' 
-            src={char.img}
+            src={char.picUrl}
           />
           <div className={styles.charInfo}>
             <h3 className={styles.charName}>{char.name}</h3>
@@ -34,11 +34,11 @@ const CombatantItem = ({char}:any) => {
           </div>
         </div>
         <div className={styles.achp}>
-          <h2 className={styles.ac}>18</h2>
+          <h2 className={styles.ac}>{char.armorClass}</h2>
           <div className={styles.hp}>
-            <h3>43</h3>
+            <h3>{char.currentHP}</h3>
             <h3> / </h3>
-            <h3>67</h3>
+            <h3>{char.maxHP}</h3>
           </div>
         </div>
       </div>

@@ -24,6 +24,7 @@
 .name {
   margin: 0;
   overflow-x: hidden;
+  text-align: center;
   text-overflow: ellipsis;
   margin: 0 0.2em 0 0.2em;
   white-space: nowrap;
@@ -36,6 +37,7 @@
   align-items: flex-start;
   height: 100%;
   width: 350px;
+  min-width: 350px;
   background-color: lightgrey;
   border: 1px solid #757575;
   border-radius: 6px;
