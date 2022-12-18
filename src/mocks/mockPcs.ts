@@ -70,7 +70,7 @@ export const mockPcs = [
     deathSaves: [ ],
   },
   {
-    picUrl: 'https://i.redd.it/2ajdfz4exqk91.png',
+    picUrl: 'https://yaktribe.games/community/data/xfmg/thumbnail/57/57022-d66689a1f603eace5b303b74ddea4df3.jpg?1612912064',
     name: 'Banessa',
     race: 'Minotaur',
     background: 'Soldier',

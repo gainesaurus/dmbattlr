@@ -94,20 +94,56 @@
 .achp {
   display: flex;
   margin: 0 1em 0 1em;
+  align-items: center;
 }
 
 .ac {
   display: flex;
   padding: 10px;
   color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
   background-color: #567d99;
-  border: 1px solid black;
+  border: thick double #640e22;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+.hpBox {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm0yMzViYXRjaDItbm9vbi0yNmEucG5n.png?s=wGdr6YF1oVTJnDgpf3Uz4yggH0wV84Z7HzDNJIzc0RU');
+  background-size:cover;
+  width: 75px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin: 0 0.5em 0 0.5em;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
 .hp {
   display: flex;
-  margin: 1em;
+  margin: 0 0.3em 0 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hpNums {
+  display: flex;
+  font-size: 20px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

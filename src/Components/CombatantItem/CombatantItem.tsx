@@ -35,11 +35,13 @@ const CombatantItem = ({char}:any) => {
         </div>
         <div className={styles.achp}>
           <h2 className={styles.ac}>{char.armorClass}</h2>
-          <div className={styles.hp}>
-            <h3>{char.currentHP}</h3>
-            <h3> / </h3>
-            <h3>{char.maxHP}</h3>
-          </div>
+            <div className={styles.hpBox}>
+              <div className={styles.hp}>
+                <h3 className={styles.hpNums}>{char.currentHP}</h3>
+                <h3> / </h3>
+                <h3 className={styles.hpNums}>{char.maxHP}</h3>
+              </div>
+            </div>
         </div>
       </div>
     )
