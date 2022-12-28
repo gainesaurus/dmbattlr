@@ -35,7 +35,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  height: 100%;
   width: 350px;
   min-width: 350px;
   background-color: lightgrey;
@@ -95,6 +94,7 @@
   display: flex;
   margin: 0 1em 0 1em;
   align-items: center;
+  border: 1px solid red;
 }
 
 .ac {
@@ -146,4 +146,36 @@
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.conditions {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.poison {
+  display: flex;
+  border: 1px solid var(--olive);
+  border-radius: 50%;
+  padding: 0.5em;
+  color: var(--olive);
+  background-color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  margin: 0 0.2em 0 0.2em;
+}
+
+.charm {
+  display: flex;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  padding: 0.5em;
+  color: var(--purple);
+  background-color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  margin: 0 0.2em 0 0.2em;
 }
