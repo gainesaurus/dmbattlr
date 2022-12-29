@@ -1,0 +1,45 @@
+.expandImg {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  object-fit: cover;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+  border: 2px solid var(--ltPurple);
+  border-radius: 6px;
+}
+
+.charCard {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #395e77;
+  box-shadow: 1px 1px 5px #395e77;
+}
+
+.charName {
+  margin: 0 0 0.2em 0;
+}
+
+.charBg {
+  margin: 0 0 0.2em 0;
+  color: #757575;
+}
+
+.charClass {
+  margin: 0 0 0.2em 0;
+  color: #757575;
+}
+
+.alignment {
+  margin: 0;
+  color: #757575;
+}
+
+.charInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 1em 1em 0;
+  height: fit-content;
+  text-align: center;
+}

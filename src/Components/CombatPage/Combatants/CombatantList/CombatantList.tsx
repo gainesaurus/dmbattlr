@@ -1,6 +1,6 @@
 import React from 'react';
 import CombatantItem from '../CombatantItem/CombatantItem';
-import { mockPcs } from '../../mocks/mockPcs';
+import { mockPcs } from '../../../../mocks/mockPcs';
 
 import styles from './CombatantList.module.css';
 
