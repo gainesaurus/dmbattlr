@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: 1px solid blue;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.list {
+  display: flex;
+  border: 1px solid red;
+  height: 20px;
+  width: 100%-2px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}

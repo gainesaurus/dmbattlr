@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-import CombatantInfo from './CombatantInfo/CombatantInfo';
+import BioInfo from './BioInfo/BioInfo';
+import Stats from './Stats/Stats';
+import WeaponList from './Weapons/WeaponList';
 
 import styles from './CombatantItem.module.css';
 
@@ -22,7 +24,7 @@ const CombatantItem = ({char}:any) => {
   } else {
     return (
       <div className={styles.expandContainer} onClick={() => setClicked(false)}>
-        <CombatantInfo char={char}/>
+        <BioInfo char={char}/>
         <div className={styles.achp}>
           <h2 className={styles.ac}>{char.armorClass}</h2>
           <div className={styles.hpBox}>
@@ -33,10 +35,12 @@ const CombatantItem = ({char}:any) => {
             </div>
           </div>
           <div className={styles.conditions}>
-            <h3 className={styles.poison}>P</h3>
-            <h3 className={styles.charm}>Ch</h3>
+            <h3 className={styles.poison} title='poisoned'>P</h3>
+            <h3 className={styles.charm} title='charmed'>Ch</h3>
           </div>
         </div>
+        <Stats char={char}/>
+        <WeaponList />
       </div>
     )
   }

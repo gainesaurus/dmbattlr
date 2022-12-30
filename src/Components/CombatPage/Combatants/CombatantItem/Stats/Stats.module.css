@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 90%;
+  align-self: center;
+}
+
+.title {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.scoreList {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0 0.5em 0;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5em 0 0.5em;
+}

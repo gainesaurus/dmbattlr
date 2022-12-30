@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './CombatantInfo.module.css';
+import styles from './BioInfo.module.css';
 
 
-const CombatantInfo = ({char}:any) => {
+const BioInfo = ({char}:any) => {
 
   return (
     <div className={styles.charCard}>
@@ -22,4 +22,4 @@ const CombatantInfo = ({char}:any) => {
   )
 }
 
-export default CombatantInfo;
+export default BioInfo;
