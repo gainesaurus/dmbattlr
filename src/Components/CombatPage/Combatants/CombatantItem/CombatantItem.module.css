@@ -66,39 +66,34 @@
 .hpBox {
   display: flex;
   flex-direction: column;
-  background-image: url('https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm0yMzViYXRjaDItbm9vbi0yNmEucG5n.png?s=wGdr6YF1oVTJnDgpf3Uz4yggH0wV84Z7HzDNJIzc0RU');
-  background-size:cover;
-  width: 75px;
-  height: 70px;
+  position: relative;
+  font-size: 70px;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-shadow: 2px 2px black;
-  margin: 0 0.5em 0 0.5em;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 70px;
-  border-bottom-right-radius: 70px;
+  color: #640e22;
+  text-shadow: 2px 2px #413344;
+  margin: 0 0.2em 0 0.2em;
 }
 
 .hp {
   display: flex;
-  margin: 0 0.3em 0 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  font-size: 18px;
 }
 
-.hpNums {
-  display: flex;
-  font-size: 20px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.hpCurrent {
+  margin: 0 0.8em 0 0;
+  width: 100%;
+  padding: 0 ;
+  text-align: left;
+}
+
+.hpTotal {
+  margin: 0 0.3em 0 0;
+  padding: 0;
+  text-align: right;
 }
 
 .conditions {
