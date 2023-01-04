@@ -6,10 +6,11 @@ import styles from './CombatantList.module.css';
 
 
 const CombatantList = () => {
+  let sortedCombatants = mockPcs.sort((pc1, pc2) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
 
   return (
     <div className={styles.listContainer}>
-      {mockPcs.map(mock => <CombatantItem char={mock}/>)}
+      {sortedCombatants.map(mock => <CombatantItem char={mock}/>)}
     </div>
   )
 }
