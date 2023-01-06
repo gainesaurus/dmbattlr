@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  width: 90%;
+  padding: 2px;
+  margin: 0.2em;
+  border-radius: 6px;
+  background-color: var(--ltBlue);
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+
+.pic {
+  width: 30px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

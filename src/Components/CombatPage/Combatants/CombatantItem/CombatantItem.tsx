@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import BioInfo from './BioInfo/BioInfo';
 import Stats from './Stats/Stats';
-import WeaponList from './Weapons/WeaponList';
+import WeaponList from './WeaponList/WeaponList';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faS, faHeart } from '@fortawesome/free-solid-svg-icons';
