@@ -46,7 +46,7 @@ const CombatantItem = ({char}:any) => {
           </div>
         </div>
         <Stats char={char}/>
-        <WeaponList />
+        <WeaponList weapon={char.weapon}/>
       </div>
     )
   }

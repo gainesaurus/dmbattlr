@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
+
+import { IWeaponItem } from '../../../../../../../Types';
 
 import styles from './WeaponItem.module.css';
 
-const WeaponItem = ({weapon}:any) => {
+interface WeaponItemProps {
+  weapon: IWeaponItem;
+}
+
+const WeaponItem:FC<WeaponItemProps> = ({ weapon }) => {
 
   return (
     <div className={styles.container}>
