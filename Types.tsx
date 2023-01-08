@@ -1,5 +1,3 @@
-import { NumberLiteralType } from "typescript";
-
 export interface IWeaponItem {
   picUrl: string;
   name: string;

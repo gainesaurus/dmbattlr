@@ -15,6 +15,11 @@
   align-items: center;
   border-bottom: 1px solid #395e77;
   box-shadow: 1px 1px 5px #395e77;
+  position: sticky;
+  top: 0;
+  background-image: url('https://media.istockphoto.com/id/1299928257/photo/vintage-white-paper-background.jpg?b=1&s=170667a&w=0&k=20&c=dl73Xpf9CMzZZH0jgi5GJMkhKth6oJHs5PtWdaM0qmo=');
+  background-size: cover;
+  z-index: 200;
 }
 
 .charName {

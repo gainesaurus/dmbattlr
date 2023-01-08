@@ -1,16 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  height: 85px;
-  margin: 0.5em 1em 0.5em 1em;
-  overflow-x: scroll;
+  width: 92%;
+  margin: 0.5em 0 0.5em 0;
   align-self: center;
 }
 
 .list {
   display: flex;
-  width: 100%
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .title {

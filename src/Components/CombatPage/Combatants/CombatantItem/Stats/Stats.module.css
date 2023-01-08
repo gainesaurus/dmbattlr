@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   border-radius: 6px;
   width: 90%;
   padding: 1%;
@@ -17,8 +16,10 @@
 .scoreList {
   display: flex;
   flex-direction: row;
-  margin: 0.5em 0.5em 0 0;
+  align-items: center;
+  margin: 0.2em 0.5em 0.2em 0;
   justify-content: space-between;
+  backdrop-filter: invert(2%);
 }
 
 .scoreContainer {
@@ -41,7 +42,7 @@
 
 .icon {
   display: flex;
-  flex-basis: 17%;
+  flex-basis: 15%;
   font-size: 50px;
   color: white;
   text-shadow: 1px 1px black;
