@@ -7,8 +7,10 @@ import WeaponList from './WeaponList/WeaponList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faS, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { RunCircle } from '@mui/icons-material';
 
 import styles from './CombatantItem.module.css';
+import ConditionList from './ConditionList/ConditionList';
 
 
 const CombatantItem = ({char}:any) => {
@@ -40,11 +42,12 @@ const CombatantItem = ({char}:any) => {
               <h3 className={styles.hpTotal}>{char.maxHP}</h3>
             </div>
           </div>
-          <div className={styles.conditions}>
-            <h3 className={styles.poison} title='poisoned'>P</h3>
-            <h3 className={styles.charm} title='charmed'>Ch</h3>
+          <div className={styles.speedBox}>
+            <RunCircle className={styles.speedIcon} fontSize='inherit'/>
+            <h3 className={styles.speed}>{char.speed}</h3>
           </div>
         </div>
+        <ConditionList />
         <Stats char={char}/>
         <WeaponList weapon={char.weapon}/>
       </div>

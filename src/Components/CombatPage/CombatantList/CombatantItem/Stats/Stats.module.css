@@ -9,7 +9,7 @@
 
 .title {
   display: flex;
-  margin: 0;
+  margin: 0 0 0.5em 0;
   padding: 0;
 }
 
@@ -17,9 +17,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0.2em 0.5em 0.2em 0;
+  margin: 0 0.5em 1em 0;
   justify-content: space-between;
-  backdrop-filter: invert(2%);
 }
 
 .scoreContainer {
@@ -38,13 +37,14 @@
   color: #413344;
   text-shadow: 1px 1px black;
   font-weight: bolder;
+  margin: 0 0 0 0.3em;
 }
 
 .icon {
   display: flex;
   flex-basis: 15%;
   font-size: 50px;
-  color: white;
+  color: var(--purpleGrey);
   text-shadow: 1px 1px black;
 }
 

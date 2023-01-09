@@ -16,9 +16,14 @@ const WeaponItem:FC<WeaponItemProps> = ({ weapon }) => {
         src={weapon.picUrl}
         className={styles.pic}
         alt="long sword" />
-      <p className={styles.info}>(+{weapon.modifier})</p>
-      <p className={styles.info}>{weapon.damage}</p>
-      <p className={styles.info}>{weapon.damageType}</p>
+      <div className={styles.weaponTag}>
+        <h4 className={styles.weaponName}>{weapon.name}</h4>
+        <div className={styles.infoContainer}>
+          <p className={styles.info}>(+{weapon.modifier})</p>
+          <p className={styles.info}>{weapon.damage}</p>
+          <p className={styles.info}>{weapon.damageType}</p>
+        </div>
+      </div>
     </div>
   )
 }

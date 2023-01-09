@@ -7,7 +7,7 @@ export const mockWeapons = [
     damageType: "slashing",
   },
   {
-    picUrl: "https://img.favpng.com/7/10/9/knife-dagger-stabbing-sword-clip-art-png-favpng-DVJ6kzhFhsCgaKATKnBqpffty.jpg",
+    picUrl: "https://holiviantales.files.wordpress.com/2015/04/hand-crossbow.png",
     name: "Hand Crossbow",
     modifier: 5,
     damage: "1d6 + 2",

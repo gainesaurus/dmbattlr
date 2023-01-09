@@ -1,8 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  width: 90%;
-  padding: 2px;
+  width: 100%;
   margin: 0.2em;
   border-radius: 6px;
   background-color: var(--blueGrey);
@@ -10,9 +9,30 @@
 }
 
 .pic {
-  width: 30px;
+  height: 100%;
+  width: 40px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.weaponTag {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.weaponName {
+  display: flex;
+  margin: 0 0 0 0.5em;
+  padding: 0;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.infoContainer {
+  display: flex;
 }
 
 .info {
