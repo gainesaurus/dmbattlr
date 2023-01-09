@@ -48,8 +48,12 @@
 
 .achp {
   display: flex;
-  margin: 0 1em 0 1em;
+  margin:  0.5em 0 0.5em 0;
+  align-self: center;
+  justify-content: space-between;
   align-items: center;
+  width: 90%;
+  height: auto;
 }
 
 .ac {
@@ -63,6 +67,7 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  margin: 0;
 }
 
 .hpBox {
@@ -74,7 +79,6 @@
   align-items: center;
   color: #640e22;
   text-shadow: 2px 2px #413344;
-  margin: 0 0.2em 0 0.2em;
 }
 
 .hp {
@@ -107,7 +111,6 @@
   font-size: 60px;
   color: var(--greenShade);
   text-shadow: 2px 2px #413344;
-  margin: 0 0.2em 0 0.2em;
   border-radius: 50%;
   box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
 }
@@ -141,8 +144,6 @@
   font-size: 60px;
   color: var(--stoneBlue);
   text-shadow: 2px 2px #413344;
-  margin: 0 0.2em 0 0.2em;
-  border: 1px solid red;
 }
 
 .init {
@@ -155,4 +156,16 @@
   padding-left: 5px;
   font-size: 20px;
   border-radius: 6px;
+}
+
+.descriptor {
+  display: flex;
+  position: absolute;
+  top: 2.6em;
+  background-color: var(--stoneBlue);
+  border: 2px solid var(--stoneBlue);
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+  text-shadow: 1px 1px black;
 }

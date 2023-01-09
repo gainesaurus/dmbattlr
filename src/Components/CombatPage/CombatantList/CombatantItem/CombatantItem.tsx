@@ -49,6 +49,7 @@ const CombatantItem = ({char}:any) => {
           <div className={styles.initBox}>
             <FontAwesomeIcon icon={["fas", "diamond"]} />
             <h3 className={styles.init} title="initiative">{char.initiative}</h3>
+            <p className={styles.descriptor}>initiative</p>
           </div>
         </div>
         <ConditionList />
