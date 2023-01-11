@@ -11,6 +11,7 @@ import { RunCircle } from '@mui/icons-material';
 
 import styles from './CombatantItem.module.css';
 import ConditionList from './ConditionList/ConditionList';
+import SpellList from './SpellList/SpellList';
 
 
 const CombatantItem = ({char}:any) => {
@@ -55,6 +56,7 @@ const CombatantItem = ({char}:any) => {
         <ConditionList />
         <Stats char={char}/>
         <WeaponList weapon={char.weapon}/>
+        <SpellList spells={char.spells}/>
       </div>
     )
   }
