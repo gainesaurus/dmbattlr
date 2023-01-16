@@ -1,10 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  border-radius: 6px;
-  width: 90%;
-  padding: 1%;
+  width: 92%;
   align-self: center;
+  border: 1px solid red;
 }
 
 .title {
