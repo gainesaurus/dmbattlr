@@ -42,7 +42,7 @@ export const mockPcs = [
     class: 'Rogue',
     subclass: 'Thief',
     alignment: 'Chaotic Neutral',
-    initiative: 23,
+    initiative: 2,
     armorClass: 13,
     proficiencyBonus: 3,
     currentHP: 39,

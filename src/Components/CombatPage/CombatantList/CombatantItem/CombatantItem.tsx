@@ -56,7 +56,7 @@ const CombatantItem = ({char}:any) => {
         <ConditionList />
         <Stats char={char}/>
         <WeaponList weapon={char.weapon}/>
-        <SpellList spells={char.spells}/>
+        <SpellList spell={char.spells}/>
       </div>
     )
   }
