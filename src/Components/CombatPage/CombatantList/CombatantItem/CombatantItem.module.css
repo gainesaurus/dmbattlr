@@ -160,11 +160,14 @@
 .descriptor {
   display: flex;
   position: absolute;
-  top: 2.6em;
+  top: 2em;
   background-color: var(--stoneBlue);
   border: 2px solid var(--stoneBlue);
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 14px;
+  font-variant: small-caps slashed-zero;
   color: white;
   text-shadow: 1px 1px black;
+  padding-right: 1px;
+  padding-left: 1px;
 }
