@@ -5,4 +5,10 @@
   width: 100%;
   max-width: 70vw;
   overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.listContainer::-webkit-scrollbar {
+  display: none;   /* Hide scrollbar for Chrome, Safari and Opera */
 }
