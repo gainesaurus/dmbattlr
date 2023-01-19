@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 90%;
+  width: 100px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  width: 400px;
+  overflow-y: scroll;
+}

@@ -11,14 +11,22 @@ import { ICombatant } from '../../../Types';
 
 const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);
+  const [showSearchForm, setShowSearchForm] = useState(false);
 
   return (
       <div className={styles.page}>
         <div className={styles.combatants}>
-          <AddCombatant />
+          <AddCombatant setAddClicked={setShowSearchForm}/>
           <CombatantList combatants={combatants} />
         </div>
-        <SearchCombatant combatants={combatants} setCombatants={setCombatants} />
+        {showSearchForm
+        ? <SearchCombatant
+            showSearchForm={showSearchForm}
+            setAddClicked={setShowSearchForm}
+            combatants={combatants}
+            setCombatants={setCombatants} />
+        : <></>
+        }
         <div className={styles.timeline} >
           <CombatTimeLine />
         </div>

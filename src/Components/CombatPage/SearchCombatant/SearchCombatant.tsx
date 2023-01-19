@@ -1,16 +1,33 @@
 import React, { useState } from 'react';
 
-const SearchCombatant = ({ combatants, setCombatants }: any) => {
-  const [searchInput, setSearchInput] = useState('');
+import { mockPcs } from '../../../mocks/mockPcs';
+import BioInfo from '../CombatantList/CombatantItem/BioInfo/BioInfo';
+
+import styles from './SearchCombatant.module.css';
+
+const SearchCombatant = ({ combatants, setCombatants, showSearchForm, setShowSearchForm }: any) => {
+  // const [searchInput, setSearchInput] = useState('');
+  const [searchOptions, setSearchOptions] = useState(mockPcs);
 
   const handleChange = (e:any) => {
     e.preventDefault();
-    setSearchInput(e.target.value)
+    setSearchOptions(searchOptions.filter((char) => char.name.match(e.target.value)));
+  }
+
+  const handleCancel = () => {
+    setShowSearchForm(false);
   }
 
   return (
-    <div>
-
+    <div className={styles.container}>
+      <input
+        className={styles.input}
+        type="search"
+        placeholder="Search here"
+        onChange={()=>handleChange}
+      />
+      {searchOptions.map((char) => <BioInfo char={char}/>)}
+      <button className={styles.button} onClick={()=>handleCancel}>Cancel</button>
     </div>
   )
 }
