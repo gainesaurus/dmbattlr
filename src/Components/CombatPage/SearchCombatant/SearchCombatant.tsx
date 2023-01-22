@@ -14,22 +14,27 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
     setSearchOptions(searchOptions.filter((char) => char.name.match(e.target.value)));
   }
 
-  const handleCancel = () => {
+  const handleClose = () => {
     setShowSearchForm(false);
   }
 
   return (
     <div className={styles.container}>
-      <input
-        className={styles.input}
-        type="search"
-        placeholder="Search Combatants"
-        onChange={()=>handleChange}
-      />
+      <header className={styles.header}>
+        <input
+          className={styles.input}
+          type="search"
+          placeholder="Find a Combatant"
+          onChange={()=>handleChange}
+        />
+      </header>
       <div className={styles.searchResults}>
         {searchOptions.map((char) => <BioInfo char={char}/>)}
       </div>
-      <button className={styles.button} onClick={handleCancel}>Cancel</button>
+      <footer className={styles.footer}>
+        <button>Add Combatant</button>
+        <button className={styles.button} onClick={handleClose}>Close</button>
+      </footer>
     </div>
   )
 }
