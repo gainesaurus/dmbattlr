@@ -5,7 +5,7 @@ import BioInfo from '../CombatantList/CombatantItem/BioInfo/BioInfo';
 
 import styles from './SearchCombatant.module.css';
 
-const SearchCombatant = ({ combatants, setCombatants, showSearchForm, setShowSearchForm }: any) => {
+const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) => {
   // const [searchInput, setSearchInput] = useState('');
   const [searchOptions, setSearchOptions] = useState(mockPcs);
 
@@ -23,11 +23,13 @@ const SearchCombatant = ({ combatants, setCombatants, showSearchForm, setShowSea
       <input
         className={styles.input}
         type="search"
-        placeholder="Search here"
+        placeholder="Search Combatants"
         onChange={()=>handleChange}
       />
-      {searchOptions.map((char) => <BioInfo char={char}/>)}
-      <button className={styles.button} onClick={()=>handleCancel}>Cancel</button>
+      <div className={styles.searchResults}>
+        {searchOptions.map((char) => <BioInfo char={char}/>)}
+      </div>
+      <button className={styles.button} onClick={handleCancel}>Cancel</button>
     </div>
   )
 }

@@ -9,5 +9,11 @@
   top: 20px;
   left: 120px;
   width: 400px;
+  z-index: 201;
+}
+
+.searchResults {
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
 }

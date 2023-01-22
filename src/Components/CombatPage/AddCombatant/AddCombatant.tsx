@@ -11,7 +11,7 @@ const AddCombatant = ({setShowSearchForm}:any) => {
   }
 
   return (
-    <button className={styles.addCombatant} onClick={()=>handleClick} >
+    <button className={styles.addCombatant} onClick={handleClick} >
       <PersonAdd />
     </button>
   )

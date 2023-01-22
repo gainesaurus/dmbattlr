@@ -16,16 +16,16 @@ const CombatPage = () => {
   return (
       <div className={styles.page}>
         <div className={styles.combatants}>
-          <AddCombatant setAddClicked={setShowSearchForm}/>
+          <AddCombatant setShowSearchForm={setShowSearchForm}/>
           <CombatantList combatants={combatants} />
         </div>
         {showSearchForm
         ? <SearchCombatant
             showSearchForm={showSearchForm}
-            setAddClicked={setShowSearchForm}
+            setShowSearchForm={setShowSearchForm}
             combatants={combatants}
             setCombatants={setCombatants} />
-        : <></>
+        : null
         }
         <div className={styles.timeline} >
           <CombatTimeLine />
