@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import CombatantItem from './CombatantItem/CombatantItem';
 
 import styles from './CombatantList.module.css';
 import { ICombatant } from '../../../../Types';
 
+interface CombatantListProps {
+  combatants: ICombatant[];
+}
 
-const CombatantList = ({combatants}:any) => {
+
+const CombatantList: FC<CombatantListProps> = ({combatants}) => {
   let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
 
   return (

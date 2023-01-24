@@ -1,7 +1,7 @@
 .charCard {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #395e77;
   box-shadow: 1px 1px 5px #395e77;
@@ -44,6 +44,7 @@
 .charInfo {
   display: flex;
   flex-direction: column;
+  width: 200px;
   margin: 1em 1em 1em 0;
   height: fit-content;
   text-align: center;

@@ -7,7 +7,7 @@ import { IWeaponItem } from '../../../../../../Types';
 import styles from './WeaponList.module.css';
 
 interface WeaponListProps {
-  weapon: IWeaponItem;
+  weapons: IWeaponItem[];
 }
 
 const WeaponList:FC<WeaponListProps> = () => {

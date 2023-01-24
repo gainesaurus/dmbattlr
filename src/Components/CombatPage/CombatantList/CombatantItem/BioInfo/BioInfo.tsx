@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
+
+import { ICombatant } from '../../../../../../Types';
 
 import styles from './BioInfo.module.css';
 
+interface CombatantItemProps {
+  char: ICombatant;
+}
 
-const BioInfo = ({char}:any) => {
+const BioInfo: FC<CombatantItemProps> = ({char}) => {
 
   return (
     <div className={styles.charCard}>

@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import CombatTimeLine from './CombatTimeLine/CombatTimeLine';
 import CombatantList from './CombatantList/CombatantList';
 import AddCombatant from './AddCombatant/AddCombatant';
+import SearchCombatant from './SearchCombatant/SearchCombatant';
 import { mockPcs } from '../../mocks/mockPcs';
 
 import styles from './CombatPage.module.css';
-import SearchCombatant from './SearchCombatant/SearchCombatant';
-import { ICombatant } from '../../../Types';
+
 
 const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);

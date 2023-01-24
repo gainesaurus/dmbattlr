@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 
 import BioInfo from './BioInfo/BioInfo';
 import Stats from './Stats/Stats';
+import ConditionList from './ConditionList/ConditionList';
 import WeaponList from './WeaponList/WeaponList';
+// import SpellList from './SpellList/SpellList';
+import { ICombatant } from '../../../../../Types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faS, faHeart, faDiamond } from '@fortawesome/free-solid-svg-icons';
@@ -10,11 +13,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { RunCircle } from '@mui/icons-material';
 
 import styles from './CombatantItem.module.css';
-import ConditionList from './ConditionList/ConditionList';
-import SpellList from './SpellList/SpellList';
 
 
-const CombatantItem = ({char}:any) => {
+interface CombatantItemProps {
+  char: ICombatant;
+}
+
+const CombatantItem: FC<CombatantItemProps> = ({char}) => {
   const [clicked, setClicked] = useState(false);
 
   library.add(faS, faHeart, faDiamond);
@@ -55,8 +60,8 @@ const CombatantItem = ({char}:any) => {
         </div>
         <ConditionList />
         <Stats char={char}/>
-        <WeaponList weapon={char.weapon}/>
-        <SpellList spell={char.spells}/>
+        <WeaponList weapons={char.weapons}/>
+        {/* <SpellList spell={char.spells}/> */}
       </div>
     )
   }
