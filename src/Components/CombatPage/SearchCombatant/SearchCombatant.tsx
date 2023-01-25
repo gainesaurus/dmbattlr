@@ -11,8 +11,13 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
 
   const handleChange = (e:any) => {
     e.preventDefault();
-    setSearchOptions(searchOptions.filter((char) => char.name.match(e.target.value)));
-  }
+    if (e.target.value.length > 0) {
+      setSearchOptions(searchOptions.filter((char) => char.name.match(e.target.value)));
+    }
+    else {
+      setSearchOptions(mockPcs);
+    };
+  };
 
   const handleClose = () => {
     setShowSearchForm(false);
@@ -25,7 +30,7 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
           className={styles.input}
           type="search"
           placeholder="Find a Combatant"
-          onChange={()=>handleChange}
+          onChange={handleChange}
         />
       </header>
       <div className={styles.searchResults}>
