@@ -3,8 +3,8 @@ import { PersonAdd } from '@mui/icons-material';
 
 import styles from './AddCombatant.module.css';
 
-const AddCombatant = ({setShowSearchForm}:any) => {
 
+const AddCombatant = ({setShowSearchForm}:any) => {
 
   const handleClick = () => {
     setShowSearchForm(true)

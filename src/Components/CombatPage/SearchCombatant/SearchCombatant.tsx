@@ -24,7 +24,7 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
   }
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <header className={styles.header}>
         <input
           className={styles.input}
@@ -40,7 +40,7 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
         <button>Add Combatant</button>
         <button className={styles.button} onClick={handleClose}>Close</button>
       </footer>
-    </div>
+    </section>
   )
 }
 

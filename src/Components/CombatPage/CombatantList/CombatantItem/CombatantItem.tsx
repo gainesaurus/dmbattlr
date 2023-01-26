@@ -26,18 +26,18 @@ const CombatantItem: FC<CombatantItemProps> = ({char}) => {
 
   if(!clicked) {
     return (
-      <div className={styles.combatantContainer} onClick={() => setClicked(true)}>
+      <section className={styles.combatantContainer} onClick={() => setClicked(true)}>
         <img 
           className={styles.smallImg}
           alt='character' 
           src={char.picUrl}
         />
         <p className={styles.name}>{char.name}</p>
-      </div>
+      </section>
     )
   } else {
     return (
-      <div className={styles.expandContainer} onClick={() => setClicked(false)}>
+      <section className={styles.expandContainer} onClick={() => setClicked(false)}>
         <BioInfo char={char}/>
         <div className={styles.achp}>
           <h2 className={styles.ac} title="armor class">{char.armorClass}</h2>
@@ -62,7 +62,7 @@ const CombatantItem: FC<CombatantItemProps> = ({char}) => {
         <Stats char={char}/>
         <WeaponList weapons={char.weapons}/>
         {/* <SpellList spell={char.spells}/> */}
-      </div>
+      </section>
     )
   }
 }

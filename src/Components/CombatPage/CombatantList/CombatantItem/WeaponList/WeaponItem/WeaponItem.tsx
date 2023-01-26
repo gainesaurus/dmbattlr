@@ -11,20 +11,20 @@ interface WeaponItemProps {
 const WeaponItem:FC<WeaponItemProps> = ({ weapon }) => {
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <img
         src={weapon.picUrl}
         className={styles.pic}
         alt="long sword" />
       <div className={styles.weaponTag}>
-        <h4 className={styles.weaponName}>{weapon.name}</h4>
+        <label className={styles.weaponName}>{weapon.name}</label>
         <div className={styles.infoContainer}>
           <p className={styles.info}>(+{weapon.modifier})</p>
           <p className={styles.info}>{weapon.damage}</p>
           <p className={styles.info}>{weapon.damageType}</p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

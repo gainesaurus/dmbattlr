@@ -13,12 +13,12 @@ interface WeaponListProps {
 const WeaponList:FC<WeaponListProps> = () => {
 
   return (
-    <div className={styles.container}>
-      <h4 className={styles.title}>Weapons:</h4>
-      <div className={styles.list}>
+    <section className={styles.container}>
+      <label className={styles.title}>Weapons:</label>
+      <ul className={styles.list}>
         {mockWeapons.map(mock => <WeaponItem weapon={mock}/>)}
-      </div>
-    </div>
+      </ul>
+    </section>
   )
 }
 
