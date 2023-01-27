@@ -34,7 +34,8 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
         />
       </header>
       <div className={styles.searchResults}>
-        {searchOptions.map((char) => <BioInfo char={char}/>)}
+        {searchOptions.map((char) => 
+          <BioInfo char={char} setCombatants={setCombatants}/>)}
       </div>
       <footer className={styles.footer}>
         <button>Add Combatant</button>

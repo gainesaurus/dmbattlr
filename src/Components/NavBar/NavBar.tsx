@@ -4,11 +4,11 @@ import { Castle, AccountCircle, DynamicForm, AutoFixHigh, Groups3, SportsMartial
 
 import styles from './NavBar.module.css';
 
+
 const NavBar = () => {
 
-
   return (
-    <div className={styles.navContainer}>
+    <nav className={styles.navContainer}>
       <div className={styles.icons}>
         <Link to='/home' className={styles.navIcon} title='home'>
           <Castle />
@@ -32,7 +32,7 @@ const NavBar = () => {
           <AccountCircle />
         </Link>
       </div>
-    </div>
+    </nav>
   )
 }
 

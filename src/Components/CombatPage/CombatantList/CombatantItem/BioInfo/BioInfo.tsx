@@ -6,9 +6,10 @@ import styles from './BioInfo.module.css';
 
 interface CombatantItemProps {
   char: ICombatant;
+  setCombatants?: React.Dispatch<React.SetStateAction<string>>
 }
 
-const BioInfo: FC<CombatantItemProps> = ({char}) => {
+const BioInfo: FC<CombatantItemProps> = ({char, setCombatants}) => {
 
   return (
     <section className={styles.charCard}>
