@@ -7,6 +7,7 @@ export interface IWeaponItem {
 }
 
 export interface ICombatant {
+  _id: number;
   picUrl: string;
   name: string;
   race: string;

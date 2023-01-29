@@ -6,13 +6,19 @@ import styles from './BioInfo.module.css';
 
 interface CombatantItemProps {
   char: ICombatant;
-  setCombatants?: React.Dispatch<React.SetStateAction<string>>
+  combatants?: ICombatant[];
+  setCombatants?: any;
 }
 
-const BioInfo: FC<CombatantItemProps> = ({char, setCombatants}) => {
+const BioInfo: FC<CombatantItemProps> = ({ char, combatants, setCombatants }) => {
+
+  const handleClick = (e:any) => {
+    if (!combatants) setCombatants([e.char]);
+    else setCombatants([e.char, ...combatants]);
+  }
 
   return (
-    <section className={styles.charCard}>
+    <section className={styles.charCard} onClick={handleClick}>
       <img 
         className={styles.expandImg}
         alt='character' 

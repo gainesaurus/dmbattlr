@@ -14,7 +14,7 @@ const CombatantList: FC<CombatantListProps> = ({combatants}) => {
 
   return (
     <div className={styles.listContainer}>
-      {sortedCombatants.map((char: any) => <CombatantItem char={char}/>)}
+      {sortedCombatants.map((char: any) => <CombatantItem key={char._id} char={char}/>)}
     </div>
   )
 }
