@@ -6,22 +6,21 @@ import BioInfo from '../CombatantList/CombatantItem/BioInfo/BioInfo';
 import styles from './SearchCombatant.module.css';
 
 const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) => {
-  // const [searchInput, setSearchInput] = useState('');
-  const [searchOptions, setSearchOptions] = useState(mockPcs);
+  const [pcList, setPcList] = useState(mockPcs);
+  const [searchInput, setSearchInput] = useState('');
 
   const handleChange = (e:any) => {
     e.preventDefault();
-    if (e.target.value.length > 0) {
-      setSearchOptions(searchOptions.filter((char) => char.name.match(e.target.value)));
-    }
-    else {
-      setSearchOptions(mockPcs);
-    };
+      setSearchInput(e.target.value);
   };
 
-  const handleClose = () => {
-    setShowSearchForm(false);
-  }
+  if (searchInput.length > 0 ) {
+    pcList.filter((char) => {
+      return char.name.match(searchInput);
+    });
+  };
+
+
 
   return (
     <section className={styles.container}>
@@ -30,16 +29,17 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
           className={styles.input}
           type="search"
           placeholder="Find a Combatant"
+          value={searchInput}
           onChange={handleChange}
         />
       </header>
       <div className={styles.searchResults}>
-        {searchOptions.map((char) => 
+        {pcList.map((char) => 
           <BioInfo key={char._id} char={char} combatants={combatants} setCombatants={setCombatants}/>)}
       </div>
       <footer className={styles.footer}>
         <button>Add Combatant</button>
-        <button className={styles.button} onClick={handleClose}>Close</button>
+        <button className={styles.button} onClick={() => setShowSearchForm(false)}>Close</button>
       </footer>
     </section>
   )
