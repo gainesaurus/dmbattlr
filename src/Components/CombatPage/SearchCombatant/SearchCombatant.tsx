@@ -9,32 +9,20 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
   const [pcList, setPcList] = useState(mockPcs);
   const [searchInput, setSearchInput] = useState('');
 
-  const handleChange = (e:any) => {
-    e.preventDefault();
-      setSearchInput(e.target.value);
-  };
-
-  if (searchInput.length > 0 ) {
-    pcList.filter((char) => {
-      return char.name.match(searchInput);
-    });
-  };
-
-
-
   return (
     <section className={styles.container}>
       <header className={styles.header}>
         <input
           className={styles.input}
-          type="search"
           placeholder="Find a Combatant"
           value={searchInput}
-          onChange={handleChange}
+          onChange={(e) => setSearchInput(e.target.value)}
         />
       </header>
       <div className={styles.searchResults}>
-        {pcList.map((char) => 
+        {pcList
+        .filter((pc) => pc.name.toLowerCase().includes(searchInput.toLowerCase()))
+        .map((char) => 
           <BioInfo key={char._id} char={char} combatants={combatants} setCombatants={setCombatants}/>)}
       </div>
       <footer className={styles.footer}>
