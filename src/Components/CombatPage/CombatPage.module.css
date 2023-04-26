@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .page {
   display: flex;
   flex-direction: row;
@@ -15,9 +21,15 @@
 .timeline {
   display: flex;
   width: 30%;
-  height: 75%;
+  height: 100%;
   box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
   border-left: 1px solid #757575;
   border-bottom: 1px solid #757575;
   border-bottom-left-radius: 6px;
+}
+
+.footer {
+  display: flex;
+  height: 20%;
+  justify-content: center;
 }

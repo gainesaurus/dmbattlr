@@ -4,6 +4,7 @@ import CombatTimeLine from './CombatTimeLine/CombatTimeLine';
 import CombatantList from './CombatantList/CombatantList';
 import AddCombatant from './AddCombatant/AddCombatant';
 import SearchCombatant from './SearchCombatant/SearchCombatant';
+import TurnTracker from './TurnTracker/TurnTracker';
 import { mockPcs } from '../../mocks/mockPcs';
 
 import styles from './CombatPage.module.css';
@@ -12,9 +13,11 @@ import styles from './CombatPage.module.css';
 const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);
   const [showSearchForm, setShowSearchForm] = useState(false);
+  const [whoseTurn, setWhoseTurn] = useState(combatants[0]);
 
   return (
-      <div className={styles.page}>
+    <div className={styles.container}>
+      <section className={styles.page}>
         <div className={styles.combatants}>
           <AddCombatant setShowSearchForm={setShowSearchForm}/>
           <CombatantList combatants={combatants} />
@@ -30,7 +33,11 @@ const CombatPage = () => {
         <div className={styles.timeline} >
           <CombatTimeLine />
         </div>
-      </div>
+      </section>
+      <section className={styles.footer}>
+        <TurnTracker setWhoseTurn={setWhoseTurn}/>
+      </section>
+    </div>
   )
 }
 
