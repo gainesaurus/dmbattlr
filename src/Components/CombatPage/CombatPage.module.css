@@ -16,6 +16,7 @@
   display: flex;
   width: 70%;
   overflow-x: scroll;
+  margin: 0.5em 0 0.5em 0;
 }
 
 .timeline {
@@ -25,11 +26,10 @@
   box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
   border-left: 1px solid #757575;
   border-bottom: 1px solid #757575;
-  border-bottom-left-radius: 6px;
 }
 
-.footer {
+.turnTracker {
   display: flex;
-  height: 20%;
+  height: 10%;
   justify-content: center;
 }

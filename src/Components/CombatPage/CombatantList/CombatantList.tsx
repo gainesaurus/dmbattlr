@@ -6,10 +6,11 @@ import { ICombatant } from '../../../../Types';
 
 interface CombatantListProps {
   combatants: ICombatant[];
+  turn: any;
 }
 
 
-const CombatantList: FC<CombatantListProps> = ({combatants}) => {
+const CombatantList: FC<CombatantListProps> = ({combatants, turn}) => {
   let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
 
   return (
@@ -18,6 +19,7 @@ const CombatantList: FC<CombatantListProps> = ({combatants}) => {
       <CombatantItem
         key={char._id}
         char={char}
+        turn={turn}
       />)}
     </div>
   )

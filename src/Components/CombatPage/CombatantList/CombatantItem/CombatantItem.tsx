@@ -13,9 +13,10 @@ import styles from './CombatantItem.module.css';
 
 interface CombatantItemProps {
   char: ICombatant;
+  turn: any;
 }
 
-const CombatantItem: FC<CombatantItemProps> = ({char}) => {
+const CombatantItem: FC<CombatantItemProps> = ({char, turn}) => {
   const [clicked, setClicked] = useState(false);
 
   if(!clicked) {

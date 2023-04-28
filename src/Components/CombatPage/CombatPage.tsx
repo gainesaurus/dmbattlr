@@ -13,14 +13,17 @@ import styles from './CombatPage.module.css';
 const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);
   const [showSearchForm, setShowSearchForm] = useState(false);
-  const [whoseTurn, setWhoseTurn] = useState(combatants[0]);
+  const [turn, setTurn] = useState(combatants[0].name);
 
   return (
     <div className={styles.container}>
+      <section className={styles.turnTracker}>
+        <TurnTracker turn={turn} setTurn={setTurn}/>
+      </section>
       <section className={styles.page}>
         <div className={styles.combatants}>
           <AddCombatant setShowSearchForm={setShowSearchForm}/>
-          <CombatantList combatants={combatants} />
+          <CombatantList combatants={combatants} turn={turn} />
         </div>
         {showSearchForm
         ? <SearchCombatant
@@ -33,9 +36,6 @@ const CombatPage = () => {
         <div className={styles.timeline} >
           <CombatTimeLine />
         </div>
-      </section>
-      <section className={styles.footer}>
-        <TurnTracker setWhoseTurn={setWhoseTurn}/>
       </section>
     </div>
   )
