@@ -1,8 +1,7 @@
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
+  align-items: center;
   border-bottom: 1px solid #757575;
   padding: 0 0 0 1em;
   background: var(--burgundy);
@@ -10,16 +9,14 @@
   z-index: 1;
 }
 
-.battleName {
+.label {
   display: flex;
-  margin: 0.2em 0.5em 0.5em 0.5em;
-  color: whitesmoke;
-  padding: 0;
+  color: lavenderblush;
 }
 
-.currentCharacter {
+.name {
   display: flex;
-  margin: 0.2em 0.5em 0.5em 0.5em;
+  margin: 0 2em 0 0.5em;
   color: whitesmoke;
   padding: 0;
 }
@@ -28,4 +25,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }

@@ -4,11 +4,11 @@
   align-items: center;
   background: none;
   color: lightgrey;
-  height: 99%;
+  height: 97%;
   width: 50px;
   border: 1px solid #757575;
   border-radius: 6px;
-  margin: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0.5em 0 0.5em 0.5em;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   cursor:pointer
 }

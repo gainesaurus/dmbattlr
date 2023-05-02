@@ -6,14 +6,10 @@ const TurnTracker: any = ({turn, setTurn}: any) => {
 
   return (
     <section className={styles.container}>
-      <div>
-        <label>Battle:</label>
-        <h2 className={styles.battleName}>Riverside Melee</h2>
-      </div>
-      <div>
-        <label>Current Combatant:</label>
-        <h2 className={styles.currentCharacter}>{turn}</h2>
-      </div>
+      <label className={styles.label}>Battle:</label>
+      <h2 className={styles.name}>Riverside Melee</h2>
+      <label className={styles.label}>Current Combatant:</label>
+      <h2 className={styles.name}>{turn}</h2>
       <button className={styles.button}>End Turn</button>
     </section>
   )

@@ -5,7 +5,7 @@ import styles from './CombatTimeLine.module.css';
 const CombatTimeLine = () => {
   return (
     <div className={styles.container}>
-      <p className={styles.entry}>Grimgar the Strange casts Ray of Enfeeblement on Hobgoblin.</p>
+      <p className={styles.entry}>April casts Ray of Enfeeblement on Frank.</p>
     </div>
   )
 }
