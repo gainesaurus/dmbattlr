@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
   padding: 5px;
   justify-content: space-between;
   box-shadow: 1px 1px 1px #757575;
@@ -43,7 +43,7 @@
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #413344;
-  margin: 0 0 0 0.3em;
+  margin: 0 0 0 0.3rem;
 }
 
 .icon {

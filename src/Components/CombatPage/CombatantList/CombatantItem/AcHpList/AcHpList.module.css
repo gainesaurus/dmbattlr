@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin:  0.5em 0 0.5em 0;
+  margin:  0.5rem 0 0.5rem 0;
   align-self: center;
   justify-content: space-between;
   align-items: center;
@@ -42,14 +42,14 @@
 }
 
 .hpCurrent {
-  margin: 0 0.8em 0 0;
+  margin: 0 0.8rem 0 0;
   width: 100%;
   padding: 0 ;
   text-align: left;
 }
 
 .hpTotal {
-  margin: 0 0.3em 0 0;
+  margin: 0 0.3rem 0 0;
   padding: 0;
   text-align: right;
 }
