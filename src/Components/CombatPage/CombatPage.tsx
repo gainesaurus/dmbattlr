@@ -14,11 +14,11 @@ const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);
   const [showSearchForm, setShowSearchForm] = useState(false);
   const [turn, setTurn] = useState(combatants[0].name);
-  let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
 
   useEffect(() => {
+    let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
     setCombatants(sortedCombatants);
-  }, [])
+  }, [combatants])
 
   return (
     <div className={styles.container}>

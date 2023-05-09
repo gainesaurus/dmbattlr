@@ -16,7 +16,7 @@ const WeaponList:FC<WeaponListProps> = () => {
     <section className={styles.container}>
       <label className={styles.title}>Weapons:</label>
       <ul className={styles.list}>
-        {mockWeapons.map(mock => <WeaponItem weapon={mock}/>)}
+        {mockWeapons.map(mock => <WeaponItem key={mock.name} weapon={mock}/>)}
       </ul>
     </section>
   )

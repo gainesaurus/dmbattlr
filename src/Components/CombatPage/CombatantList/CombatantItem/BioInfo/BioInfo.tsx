@@ -6,19 +6,13 @@ import styles from './BioInfo.module.css';
 
 interface CombatantItemProps {
   char: ICombatant;
-  combatants?: ICombatant[];
-  setCombatants?: any;
+  selected?: boolean;
 }
 
-const BioInfo: FC<CombatantItemProps> = ({ char, combatants, setCombatants }) => {
-
-  const handleClick = (e:any) => {
-    if (!combatants) setCombatants([e.char]);
-    else setCombatants([e.char, ...combatants]);
-  }
+const BioInfo: FC<CombatantItemProps> = ({ char, selected }) => {
 
   return (
-    <section className={styles.charCard} onClick={handleClick}>
+    <section className={styles.charCard}>
       <img 
         className={styles.expandImg}
         alt='character' 

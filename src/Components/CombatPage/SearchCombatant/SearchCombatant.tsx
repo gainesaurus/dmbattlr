@@ -8,6 +8,7 @@ import styles from './SearchCombatant.module.css';
 const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) => {
   const [pcList, setPcList] = useState(mockPcs);
   const [searchInput, setSearchInput] = useState('');
+  const [selected, setSelected] = useState(false);
 
   return (
     <section className={styles.container}>
@@ -23,7 +24,7 @@ const SearchCombatant = ({ combatants, setCombatants, setShowSearchForm }: any) 
         {pcList
         .filter((pc) => pc.name.toLowerCase().includes(searchInput.toLowerCase()))
         .map((char) => 
-          <BioInfo key={char._id} char={char} combatants={combatants} setCombatants={setCombatants}/>)}
+          <BioInfo key={char._id} char={char} selected={selected} />)}
       </div>
       <footer className={styles.footer}>
         <button>Add Combatant</button>
