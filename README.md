@@ -1,6 +1,6 @@
 # dmBattlr (in development)
 
-dmBattlr is the app to help dungeon masters run combat in the popular role-playing game, Dungeons & Dragons! Tired of tracking initiative? Cross-eyed from calculating damage and condition effects? This is the app for you! Stay tuned!
+dmBattlr is the app to help dungeon masters run combat in the popular role-playing game, Dungeons & Dragons! Tired of tracking initiative? Couldn't possibly calculate all that damage? Cross-eyed from all the condition effects? This is the app for you! Stay tuned!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
