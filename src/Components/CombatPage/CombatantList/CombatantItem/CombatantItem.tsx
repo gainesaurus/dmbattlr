@@ -13,7 +13,7 @@ import styles from './CombatantItem.module.css';
 
 interface CombatantItemProps {
   char: ICombatant;
-  turn: any;
+  turn: ICombatant;
 }
 
 const CombatantItem: FC<CombatantItemProps> = ({char, turn}) => {

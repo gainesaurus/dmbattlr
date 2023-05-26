@@ -13,7 +13,7 @@ import styles from './CombatPage.module.css';
 const CombatPage = () => {
   const [combatants, setCombatants] = useState(mockPcs);
   const [showSearchForm, setShowSearchForm] = useState(false);
-  const [turn, setTurn] = useState(combatants[0].name);
+  const [turn, setTurn] = useState(combatants[0]);
 
   useEffect(() => {
     let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
@@ -32,7 +32,7 @@ const CombatPage = () => {
         </div>
         {showSearchForm
         ? <SearchCombatant
-            showSearchForm={showSearchForm}
+            // showSearchForm={showSearchForm}
             setShowSearchForm={setShowSearchForm}
             combatants={combatants}
             setCombatants={setCombatants} />

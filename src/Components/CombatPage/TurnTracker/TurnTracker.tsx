@@ -9,7 +9,7 @@ const TurnTracker: any = ({turn, setTurn}: any) => {
       <label className={styles.label}>Battle:</label>
       <h2 className={styles.name}>Riverside Melee</h2>
       <label className={styles.label}>Current Combatant:</label>
-      <h2 className={styles.name}>{turn}</h2>
+      <h2 className={styles.name}>{turn.name}</h2>
       <button className={styles.button}>End Turn</button>
     </section>
   )
