@@ -18,7 +18,7 @@ const CombatPage = () => {
   useEffect(() => {
     let sortedCombatants = combatants.sort((pc1:any, pc2:any) => (pc1.initiative < pc2.initiative) ? 1 : (pc1.initiative > pc2.initiative) ? -1 : 0);
     setCombatants(sortedCombatants);
-  }, [combatants])
+  }, [combatants]);
 
   return (
     <div className={styles.container}>
@@ -32,7 +32,6 @@ const CombatPage = () => {
         </div>
         {showSearchForm
         ? <SearchCombatant
-            // showSearchForm={showSearchForm}
             setShowSearchForm={setShowSearchForm}
             combatants={combatants}
             setCombatants={setCombatants} />
