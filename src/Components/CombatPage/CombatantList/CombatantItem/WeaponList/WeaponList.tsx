@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 
 import WeaponItem from './WeaponItem/WeaponItem';
 import { mockWeapons } from '../../../../../mocks/mockWeapons';

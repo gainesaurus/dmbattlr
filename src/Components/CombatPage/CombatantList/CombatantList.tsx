@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import CombatantItem from './CombatantItem/CombatantItem';
 
 import styles from './CombatantList.module.css';

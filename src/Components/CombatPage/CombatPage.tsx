@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import CombatTimeLine from './CombatTimeLine/CombatTimeLine';
 import CombatantList from './CombatantList/CombatantList';

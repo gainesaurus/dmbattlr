@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import { useState, FC } from 'react';
 
 import BioInfo from './BioInfo/BioInfo';
 import AcHpList from './AcHpList/AcHpList';

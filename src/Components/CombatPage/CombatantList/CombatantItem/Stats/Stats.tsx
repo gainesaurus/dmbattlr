@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faS, faHandFist, faPersonFallingBurst, faBuildingColumns, faBrain, faMasksTheater, faBookBookmark } from '@fortawesome/free-solid-svg-icons';
 

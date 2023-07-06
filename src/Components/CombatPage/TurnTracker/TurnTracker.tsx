@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './TurnTracker.module.css';
 
 const TurnTracker: any = ({turn, setTurn}: any) => {

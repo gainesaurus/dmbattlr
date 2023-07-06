@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { mockPcs } from '../../../mocks/mockPcs';
 import BioInfo from '../CombatantList/CombatantItem/BioInfo/BioInfo';

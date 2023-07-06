@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './SpellList.module.css';
 
 const SpellList = (spells:any) => {
